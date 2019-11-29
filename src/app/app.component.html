@@ -61,13 +61,16 @@
   </div>
 
   <div class="row">
-    <div class="col-12">
-      <button type="button" style="text-align: left; float: left;" (click)="changePhotoLeft()" class="btn btn-outline-info"> Esquerda </button>
-      <button type="button" style="text-align: right; float: right;" (click)="changePhotoRight()" class="btn btn-outline-info"> Direita </button>
+    
+    <div class="col-12" style="margin-bottom: 20px;">
+      <button style="text-align: left; float: left;" (click)="changePhotoLeft()" class="btn btn-outline-info btnChangeImg"> Esquerda </button>
+      <button style="text-align: right; float: right;" (click)="changePhotoRight()" class="btn btn-outline-info btnChangeImg"> Direita </button>
     </div>
-    <div class="col-12">
+
+    <div class="col-12" style="margin-top: 20px;">
       <img [src]="currentUrl" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
     </div>
+
   </div>
 
   <!-- Terminal -->
